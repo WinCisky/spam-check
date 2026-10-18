@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "spam-check",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-18",
+  "observability": { "enabled": true },
+  "vars": {
+    // Set to your frontend origin (e.g. https://<user>.github.io) to restrict CORS
+    "ALLOWED_ORIGIN": "*",
+    "MAX_EMAIL_BYTES": "1000000"
+  }
+}
